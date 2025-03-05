@@ -16,13 +16,12 @@ pkgs.rPackages.buildRPackage {
     Various diagnostic plots are available to inspect the quality of the
     imputations.'';
   propagatedBuildInputs = with pkgs.rPackages; [ 
-    tidyr
-    generics
     lattice
     dplyr
+    tidyr
     rlang
-    Rcpp
     broom
- ];
-
+    Rcpp
+    generics
+  ];
 }
